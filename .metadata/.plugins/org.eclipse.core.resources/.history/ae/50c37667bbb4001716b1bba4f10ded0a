@@ -1,0 +1,18 @@
+package step2;
+/*
+ * 5´Ü°è 10869¹ø A/B
+ */
+
+import java.util.Scanner;
+public class No_6 {
+	public static void main(String args[]){
+		Scanner scan = new Scanner(System.in);
+		int a = scan.nextInt();
+		int b = scan.nextInt();
+		System.out.println(a+b);
+		System.out.println(a-b);
+		System.out.println(a*b);
+		System.out.println(a/b);
+		System.out.print(a%b);;
+	}
+}

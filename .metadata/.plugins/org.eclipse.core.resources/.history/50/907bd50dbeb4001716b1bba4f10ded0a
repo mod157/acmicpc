@@ -1,0 +1,21 @@
+package step2;
+/*
+ * 8단계 2839번  설탕배달
+ */
+
+import java.util.Scanner;
+public class No_8 {
+	public static void main(String args[]){
+		Scanner scan = new Scanner(System.in);
+		int a = scan.nextInt();
+		int div = a/5;
+		if(a % 5 == 0){
+			System.out.print(a/5);
+		}else if( a % 10 == 3 || a % 10 == 6 || a % 10 == 9){
+			System.out.print(a/5 + (a%5)/3);
+		}else if(a % 10 == 2 || a % 10 == 8){
+			System.out.print((a/5-2) + (a%10+10)%3);
+		}
+		
+	}
+}

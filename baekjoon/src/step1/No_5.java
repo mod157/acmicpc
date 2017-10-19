@@ -1,0 +1,13 @@
+package step1;
+/*
+ * 5´Ü°è No.10172 °³
+ */
+public class No_5 {
+	public static void main(String[] args) {
+		System.out.println("|\\_/|");
+		System.out.println("|q p|   /}");
+		System.out.println("( 0 )\"\"\"\\");
+		System.out.println("|\"^\"`    |");
+		System.out.println("||_/=\\\\__|");
+	}
+}

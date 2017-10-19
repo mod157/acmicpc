@@ -1,0 +1,21 @@
+package step3;
+/*
+ * 11단계 No.11721 열 개씩 끊어 출력하기
+ */
+import java.util.Scanner;
+
+public class No_11 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		String str = scan.nextLine();
+		char[] chars = str.toCharArray();
+		String solution = "";
+		for(int i = 0; i <= str.length(); i++){
+			solution += char[i];
+			if(i != 0 && i % 10 == 0){
+				System.out.print(solution);
+			}
+		}
+	}
+}
