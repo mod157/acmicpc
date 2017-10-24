@@ -1,0 +1,34 @@
+package step4;
+/*
+ * 6단계 No.1110 더하기 사이클
+ */
+
+import java.util.Scanner;
+
+public class No_6 {
+	public static void main(String args[]){
+		Scanner scan = new Scanner(System.in);
+		int a = scan.nextInt();
+		int cnt = 1;
+		int val = 0;
+		//for(int i = 1; i <= 99; i++) {
+		//	a = i;
+			if(a > 10) {
+				val = (a%10)*10+(a/10 + a%10);
+			}else {
+				val = a*10 + a;
+			}
+			System.out.println(val);
+			while(a != val) {
+				cnt++;
+				int leftVal = val/10;
+				int rightVal = val%10;
+				int sumVal = leftVal + rightVal;
+				val = rightVal*10 + sumVal%10;
+				//System.out.println(val);
+				//System.out.println("["+i+"] : "+val);
+			}
+			System.out.print("cnt : "+ cnt);
+		//}
+	}
+}
